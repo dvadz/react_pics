@@ -3,9 +3,9 @@ import React from "react";
 class SearchBar extends React.Component {
   render() {
     return (
-      <div>
-        <form>
-          <input type='text'></input>
+      <div className='ui segment'>
+        <form className='ui  form'>
+          <input className='field' type='text' placeholder='Search images' />
         </form>
       </div>
     );
