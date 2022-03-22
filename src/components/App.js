@@ -2,6 +2,7 @@ import React from "react";
 import unsplash from "../api/unsplash";
 import SearchBar from "./SearchBar";
 import "./App.css";
+import ImageList from "./ImageList";
 
 class App extends React.Component {
   onSubmit = async (searchTerm) => {
@@ -17,6 +18,7 @@ class App extends React.Component {
     return (
       <div className='ui container mt10px'>
         <SearchBar onSubmit={this.onSubmit} />
+        <ImageList />
       </div>
     );
   }
