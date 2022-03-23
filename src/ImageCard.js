@@ -1,10 +1,19 @@
 import React from "react";
 
 class ImageCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.imageRef = React.createRef();
+  }
+
   render() {
     return (
       <div>
-        <img src={this.props.image.urls.regular} alt={this.props.image.description} />
+        <img
+          ref={this.imageRef}
+          src={this.props.image.urls.regular}
+          alt={this.props.image.description}
+        />
       </div>
     );
   }
